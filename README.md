@@ -1,4 +1,4 @@
-# tiralabra
+# Tiralabra
 
 ## Viikkoraportit
 
