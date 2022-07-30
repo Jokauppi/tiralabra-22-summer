@@ -16,7 +16,7 @@ Projektin riippuvuudet voi asentaa komennolla
 
 projektin käynnistys
 
-```python3 src/index.py```
+```python3 src/```
 
 automaattisten testien ajo
 

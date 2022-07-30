@@ -23,4 +23,4 @@ Tarkoituksena on muodostaa kohina ansin [simplex noise](https://en.wikipedia.org
 
 ## Tietorakenteet ja aikavaativuudet
 
-Projektin pääasiallisena tietorakenteena käytetään kaksiulotteista taulukkoa/matriisia, minkä seurauksena algoritmin tila-ja aikavaativuuden tulisi noudattaa kartan kokoa ja olla siten O(mn) leveyden m ja korkeuden n mukaan.
+Projektin pääasiallisena tietorakenteena käytetään kaksiulotteista taulukkoa/matriisia, minkä seurauksena tavoitteena on, että algoritmin tila-ja aikavaativuus noudattaisi kartan kokoa ja olla siten O(mn) leveyden m ja korkeuden n mukaan.
