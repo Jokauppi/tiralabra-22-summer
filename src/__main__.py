@@ -1,11 +1,27 @@
 from mayavi import mlab
+from noise import snoise2
+import numpy as np
 
 def main():
+    
+    map_options = {
+        'size': 400,
+        'octaves': 5
+    }
+    map_shape = (map_options["size"], map_options["size"])
 
+    map_data = np.zeros(map_shape)
 
-    mlab.figure(size=(640, 800), bgcolor=(0.16, 0.28, 0.46))
+    for index in np.ndindex(map_shape):
+        x, y = index
+        map_data[x, y] = 10*(1 + snoise2(x, y, octaves=5))
 
-    mlab.surf(data, warp_scale=0.2) 
+    print(map_data)
+    
+    mlab.figure(size=(800, 800), bgcolor=(0, 0, 0))
+
+    mlab.surf(map_data)
+
     mlab.show()
 
 if __name__ == '__main__':

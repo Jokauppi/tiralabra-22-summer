@@ -7,10 +7,15 @@ authors = ["Joona Kauppila <joona.kauppila@helsinki.fi>"]
 [tool.poetry.dependencies]
 python = "^3.8"
 pylint = "^2.14.5"
+mayavi = "^4.8.0"
+noise = "^1.2.2"
+numpy = "^1.23.1"
+PyQt5 = "^5.15.7"
 
 [tool.poetry.dev-dependencies]
 pytest = "^7.1.2"
 coverage = "^6.4.2"
+pylint = "^2.14.5"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
